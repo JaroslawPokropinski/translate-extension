@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest.json",
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "name": "translate-extension",
+  "description": "Translate selection to English",
+  "icons": {
+    "48": "images/extension_48.png"
+  },
+  "permissions": [
+    "contextMenus"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.ts"],
+      "css": ["content.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.ts"
+  },
+  "author": "Jarosław Pokropiński"
+}

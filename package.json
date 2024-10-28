@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "translate-extension",
+  "description": "Web extension translating selection to English",
+  "version": "0.0.1",
+  "author": {
+    "name": "Jarosław Pokropiński",
+    "email": "jarek.pokropinski@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "extension": "latest",
+    "typescript": "5.3.3"
+  },
+  "scripts": {
+    "dev": "extension dev",
+    "start": "extension start",
+    "build": "extension build"
+  }
+}
